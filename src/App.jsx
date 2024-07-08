@@ -1,25 +1,18 @@
-//import './App.css'
-
-//function App() {
-
-//  return <h1>Editorial Mar Negro</h1>
-
-//}
-
-//export default App
-
 import './App.css'
-import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
-import './App.css';
+import Navbar from './components/Navbar/Navbar.jsx'
+import {categories} from './mock/mockData.js'
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer greeting="¡Bienvenidos a nuestra tienda de libros!" />
-    </div>
-  );
+function App(){
+  const title='Editorial Mar Negro'
+
+  return(
+    <>
+      <Navbar categories={categories} title='LOGO'/>
+      <div>
+        <h1>{title}</h1>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

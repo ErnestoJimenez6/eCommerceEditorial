@@ -1,6 +1,6 @@
-export const categories = ['Ciencia Ficción', 'Fantasía', 'Terror']
+export const categories=['Ciencia Ficción','Fantasía','Terror']
 
-export const products = [
+export const products=[
     {
         id:1,
         name:'',

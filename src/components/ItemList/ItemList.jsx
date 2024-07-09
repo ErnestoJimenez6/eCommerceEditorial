@@ -1,10 +1,12 @@
-import Item from "../Item/Item";
+import Item from '../Item/Item'
 
-const ItemList = () => {
-    return (
+const ItemList=()=>{
+    return(
         <>
-            <div>Item List</div>
-            <Item/>
+            <div>
+                <div>Item List</div>
+                <Item/>
+            </div>
         </>
     )
 }

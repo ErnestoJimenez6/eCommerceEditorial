@@ -4,11 +4,12 @@ import ItemList from '../ItemList/ItemList'
 const ItemListContainer=({title})=>{
     return(
         <>
-            <div>{title}</div>
-            <ItemList />
-            <ItemCuont stock={10} initial={1}/>
+            <div>
+                <div>{title}</div>
+                <ItemList />
+                <ItemCuont stock={10} initial={1}/>
+            </div>
         </>
     )
 }
-
 export default ItemListContainer

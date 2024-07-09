@@ -1,5 +1,5 @@
 import './App.css'
-import Navbar from './components/Navbar/Navbar.jsx'
+import NavBar from './components/Navbar/Navbar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
 import {categories} from './mock/mockData.js'
 
@@ -8,7 +8,7 @@ function App(){
 
   return(
     <>
-      <Navbar categories={categories} title='LOGO'/>
+      <NavBar categories={categories} title='LOGO'/>
       <ItemListContainer title={title}/>
     </>
   )

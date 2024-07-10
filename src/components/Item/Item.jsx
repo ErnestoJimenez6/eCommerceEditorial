@@ -1,5 +1,11 @@
-const Item = () => {
-    return <div>Item</div>
-};
+import './Item.css'
 
-export default Item;
+const Item=()=>{
+    return(
+        <div className='item'>
+            <div>Item</div>
+        </div>
+    )
+}
+
+export default Item

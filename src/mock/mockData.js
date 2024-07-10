@@ -149,7 +149,7 @@ export const products=[
         author:'Dan Simmons',
         description:'Un escritor viaja a Calcuta con su familia para investigar la vida de un poeta místico, pero se encuentra envuelto en un mundo de cultos oscuros, magia negra y horrores sobrenaturales que desafían toda razón y cordura.',
         price:15000,
-        ategory:[
+        category:[
             'Terror',
             'Fantasía'
         ],

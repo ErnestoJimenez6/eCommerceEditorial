@@ -2,7 +2,7 @@ import './CartWidget.css'
 
 const CartWidget=()=>{
     return(
-        <div className="cart-widget d-flex align-items-center justify-content-center">
+        <div className="cart-widget">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

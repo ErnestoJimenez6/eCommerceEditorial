@@ -1,5 +1,3 @@
-import './CartWidget.css'
-
 const CartWidget=()=>{
     return(
         <div className="cart-widget d-flex align-items-center justify-content-center">

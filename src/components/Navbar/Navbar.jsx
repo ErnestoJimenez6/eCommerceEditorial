@@ -7,7 +7,7 @@ const NavBar=({categories})=>{
             <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src='/src/assets/logo.png' alt="Logo" height="100"/> Editorial Mar Negro
+                        <img src='/src/assets/logo.png' alt="Logo" height="100"/>Editorial Mar Negro
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

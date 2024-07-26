@@ -1,5 +1,5 @@
 import'./App.css'
-import NavBar from'./components/NavBar/NavBar.jsx'
+import Navbar from'./components/Navbar/Navbar.jsx'
 import ItemListContainer from'./components/ItemListContainer/ItemListContainer.jsx'
 import{categories}from'./mock/mockData.js'
 

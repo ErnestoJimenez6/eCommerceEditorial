@@ -1,7 +1,7 @@
 import CartWidget from'../CartWidget/CartWidget'
 import{categories}from'../../mock/mockData'
 
-const NavBar=({categories})=>{
+const Navbar=({categories})=>{
     return(
         <>
             <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -33,4 +33,4 @@ const NavBar=({categories})=>{
     )
 }
 
-export default NavBar
+export default Navbar

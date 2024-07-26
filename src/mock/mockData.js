@@ -7,53 +7,41 @@ export const categories=[
 export const products=[
     {
         id:1,
-        name:'La mano izquierda de la oscuridad',
-        author:'Ursula K. Le Guin',
-        description:'En el planeta Gethen, donde los habitantes pueden cambiar de género, un enviado de la Tierra busca alianzas mientras descubre antiguos poderes místicos y secretos culturales.',
+        name:'La invención de Morel',
+        author:'Adolfo Bioy Casares',
+        description:'Una novela que mezcla ciencia ficción y realismo mágico, explorando temas de inmortalidad y percepción de la realidad.',
         price:15000,
-        category:[
-            'cienciaFiccion',
-            'fantasia'
-        ],
+        category:['cienciaFiccion'],
         stock:'',
         image:'',
     },
     {
         id:2,
-        name:'Hyperion',
-        author:'Dan Simmons',
-        description:'Siete peregrinos viajan a un mundo lejano para enfrentar al misterioso Alcaudón, una criatura que desafía las leyes de la física y el tiempo, en una epopeya que mezcla tecnología avanzada y mitología.',
+        name:'El Año del Desierto',
+        author:'Pedro Mairal',
+        description:'Esta novela es una metáfora de la eterna crisis argentina potenciada hasta la destrucción total, hasta que sólo queden el desierto y una voz para contar la historia. El año del desierto vuelve a confirmar a Pedro Mairal como uno de los mejores escritores argentinos de su generación.',
         price:20000,
-        category:[
-            'cienciaFiccion',
-            'fantasia'
-        ],
+        category:['cienciaFiccion'],
         stock:'',
         image:'',
     },
     {
         id:3,
-        name:'Annihilation',
+        name:'Aniquilación',
         author:'Jeff VanderMeer',
         description:'Un equipo de científicas entra en el Área X, una zona misteriosa y prohibida donde las leyes de la naturaleza se desintegran, enfrentándose a terroríficas mutaciones y fuerzas inexplicables.',
         price:10000,
-        category:[
-            'cienciaFiccion',
-            'terror'
-        ],
+        category:['cienciaFiccion'],
         stock:'',
         image:'',
     },
     {
         id:4,
-        name:'Cuentos del búho',
-        author:'Mariano Buscaglia',
-        description:'Una serie de cuentos con diversas temáticas en las que la cienciaFiccion y el terror se fusionan, explorando desde futuros distópicos hasta perturbadoras anomalías científicas.',
+        name:'El almuerzo desnudo',
+        author:'Philip K. Dick',
+        description:'En un futuro post-apocalíptico, los cazadores de androides enfrentan la difusa línea entre humanidad y máquina.',
         price:15000,
-        category:[
-            'cienciaFiccion',
-            'terror'
-        ],
+        category:['cienciaFiccion'],
         stock:'',
         image:'',
     },
@@ -69,40 +57,31 @@ export const products=[
     },
     {
         id:6,
-        name:'Neverwhere',
-        author:'Neil Gaiman',
-        description:'Un hombre común se sumerge en un Londres subterráneo lleno de seres mágicos y tecnología olvidada, donde la realidad y la fantasia se entrelazan en una oscura aventura.',
+        name:'Los sorias',
+        author:'Alberto Laiseca',
+        description:'publicada en 1998. Es la novela más larga del autor, y ha sido considerada por la crítica, lectores y el propio Laiseca como su obra cumbre',
         price:10000,
-        category:[
-            'fantasia',
-            'Ciancia Ficcón'
-        ],
+        category:['fantasia'],
         stock:'',
         image:'',
     },
     {
         id:7,
-        name:'Elantris',
-        author:'Brandon Sanderson',
-        description:'En la ciudad mística de Elantris, donde antaño florecían la magia y la prosperidad, un misterioso evento transforma a sus habitantes en seres con poderes pero también condenados a una existencia agonizante, mientras un joven príncipe y una investigadora se enfrentan a la búsqueda de la verdad.',
+        name:'Cien años de soledad',
+        author:'Gabriel García Márquez',
+        description:'Narra a historia de la familia Buendía a lo largo de varias generaciones en el pueblo ficticio de Macondo. La novela fusiona lo mágico y lo real para explorar temas de soledad, destino y la influencia del tiempo en la historia y la memoria.',
         price:15000,
-        category:[
-            'fantasia',
-            'Ciancia Ficcón'
-        ],
+        category:['fantasia'],
         stock:'',
         image:'',
     },
     {
         id:8,
-        name:'La casa de hojas',
-        author:'Mark Z. Danielewski',
-        description:'Un hombre descubre un extraño manuscrito que narra la historia de una casa que crece y cambia de manera inexplicable, conteniendo pasajes que desafían la lógica y desencadenan terroríficas experiencias sobrenaturales.',
+        name:'La estación de la calle Perdido',
+        author:'China Miéville',
+        description:'Bajo las gigantescas costillas blanqueadas de una bestia antigua y muerta yace la ciudad de Nueva Crobuzon, donde el trato turbio no es extraño para nadie. Pronto ocurrirá una metamorfosis inquietante que impregnaría cada fibra de Nueva Crobuzon y ni siquiera el Embajador del Infierno desafiará el terror maligno que provoca.',
         price:20000,
-        category:[
-            'fantasia',
-            'terror'
-        ],
+        category:['fantasia'],
         stock:'',
         image:'',
     },
@@ -112,10 +91,7 @@ export const products=[
         author:'Neil Gaiman',
         description:'En un Estados Unidos donde los antiguos dioses mitológicos coexisten con los nuevos dioses de la tecnología y los medios de comunicación, un exconvicto se ve envuelto en una batalla épica que revela la oscura y terrorífica verdad detrás de la fe y la creencia humanas.',
         price:10000,
-        category:[
-            'fantasia',
-            'terror'
-        ],
+        category:['fantasia'],
         stock:'',
         image:'',
     },
@@ -135,10 +111,7 @@ export const products=[
         author:'Peter Watts',
         description:'En un futuro cercano, una expedición espacial se enfrenta a un encuentro con inteligencias extraterrestres que desafían toda comprensión humana, explorando los límites del conocimiento y el horror existencial.',
         price:20000,
-        category:[
-            'terror',
-            'cienciaFiccion'
-        ],
+        category:['terror'],
         stock:'',
         image:'',
     },
@@ -148,23 +121,17 @@ export const products=[
         author:'Dmitry Glukhovsky',
         description:'En un Moscú post-apocalíptico, los supervivientes de la humanidad se refugian en los oscuros túneles del metro, enfrentándose a criaturas mutantes y a la locura humana mientras luchan por sobrevivir en un ambiente saturado de terror y desesperación.',
         price:10000,
-        category:[
-            'terror',
-            'cienciaFiccion'
-        ],
+        category:['terror'],
         stock:'',
         image:'',
     },
     {
         id:13,
-        name:'La canción de Kali',
-        author:'Dan Simmons',
-        description:'Un escritor viaja a Calcuta con su familia para investigar la vida de un poeta místico, pero se encuentra envuelto en un mundo de cultos oscuros, magia negra y horrores sobrenaturales que desafían toda razón y cordura.',
+        name:'El reino de la noche',
+        author:'William Hope Hodgson',
+        description:'Un joven del siglo XVII, es transportado a miles de años de nuestro presente, donde el sol ya se ha extinguido y los pocos seres humanos cuerdos que han logrado sobrevivir se han refugiado en una gran pirámide metálica de más de ocho millas de altura y poblada por miles de ciudades.',
         price:15000,
-        category:[
-            'terror',
-            'fantasia'
-        ],
+        category:['terror'],
         stock:'',
         image:'',
     },
@@ -193,7 +160,7 @@ export const products=[
     },
 ]
 
-export const getProducts=()=>{
+{/* export const getProducts=()=>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(products)
@@ -208,3 +175,11 @@ export const getProductById=(productId)=>{
         },500)
     })
 }
+
+export const getProductsByCategory=(categoryId)=>{
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(products.filter(product=>product.category.includes(categoryId)))
+        },500)
+    })
+} */}

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Item from'../Item/Item'
 import{products}from'../../mock/mockData'
 import'./ItemList.css'
@@ -9,7 +10,7 @@ const ItemList=({category})=>{
         <div className='item-list'>
             <h2>Productos de la categoría:{category}</h2>
             {filteredProducts.map(product=>(
-                <Item key={product.id} product={product} />
+                <Item key={product.id} product={product}/>
             ))}
         </div>
     )

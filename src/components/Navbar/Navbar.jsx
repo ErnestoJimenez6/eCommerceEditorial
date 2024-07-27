@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import CartWidget from'../CartWidget/CartWidget'
-import{categories}from'../../mock/mockData'
+import NavBarLink from './NavBarLink'
 
 const Navbar=({categories})=>{
     return(
@@ -14,21 +15,14 @@ const Navbar=({categories})=>{
                     </button>
                     <div className="collapse navbar-collapse justify-content-around" id="navbarNav">
                         <ul className="navbar-nav w-100 justify-content-around">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">{categories[0]}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{categories[1]}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{categories[2]}</a>
-                            </li>
+                            {categories.map((element,index)=>{
+                                return <NavBarLink key={index} category={element}/>
+                            })}
                         </ul>
+                        <CartWidget/>
                     </div>
                 </div>
-            </nav>
-    
-            <CartWidget/>
+            </nav>      
         </>
     )
 }

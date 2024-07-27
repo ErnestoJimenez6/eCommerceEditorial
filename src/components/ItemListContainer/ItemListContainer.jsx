@@ -1,14 +1,16 @@
-import ItemCuont from'../ItemCount/ItemCount'
+/* eslint-disable react/prop-types */
 import ItemList from'../ItemList/ItemList'
 import'./ItemListContainer.css'
 
 const ItemListContainer=({title})=>{
+
+    // const products=[]
+
     return(
         <>
             <div className='item-list-container'>
                 <div>{title}</div>
-                <ItemList />
-                <ItemCuont stock={10} initial={1}/>
+                <ItemList/>
             </div>
         </>
     )

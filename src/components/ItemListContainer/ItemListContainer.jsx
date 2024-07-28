@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import ItemList from'../ItemList/ItemList'
 import'./ItemListContainer.css'
+import{products}from'../../mock/mockData'
 
 const ItemListContainer=({title})=>{
 
@@ -10,9 +11,10 @@ const ItemListContainer=({title})=>{
         <>
             <div className='item-list-container'>
                 <div>{title}</div>
-                <ItemList/>
+                <ItemList products={products}/>
             </div>
         </>
     )
 }
+
 export default ItemListContainer

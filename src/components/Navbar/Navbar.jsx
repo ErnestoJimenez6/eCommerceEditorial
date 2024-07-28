@@ -2,7 +2,7 @@
 import CartWidget from'../CartWidget/CartWidget'
 import NavBarLink from './NavBarLink'
 
-const Navbar=({categories})=>{
+const Navbar=({genres})=>{
     return(
         <>
             <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -15,8 +15,8 @@ const Navbar=({categories})=>{
                     </button>
                     <div className="collapse navbar-collapse justify-content-around" id="navbarNav">
                         <ul className="navbar-nav w-100 justify-content-around">
-                            {categories.map((element,index)=>{
-                                return <NavBarLink key={index} category={element}/>
+                            {genres.map((element,index)=>{
+                                return <NavBarLink key={index} genre={element}/>
                             })}
                         </ul>
                         <CartWidget/>

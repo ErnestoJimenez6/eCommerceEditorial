@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import './ItemCount.css'
-import {useState} from 'react'
+import'./ItemCount.css'
+import{useState}from'react'
 
 const ItemCount=({stock,initial})=>{
     const[qty,setQty]=useState(initial)

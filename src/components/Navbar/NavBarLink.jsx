@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-export const NavBarLink=({category})=>{
+export const NavBarLink=({genre})=>{
     return(
         <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="#">{category}</a>
+            <a className="nav-link" aria-current="page" href="#">{genre}</a>
         </li>
     )
 }

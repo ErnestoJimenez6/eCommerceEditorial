@@ -26,7 +26,7 @@ const ItemCount=({stock,initial})=>{
     }
 
     return(
-        <div className="item-count">
+        <div className='item-count'>
             <button onClick={()=>handleClick('-')}>-</button>
             <span>{qty}</span>
             <button onClick={()=>handleClick('+')}>+</button>

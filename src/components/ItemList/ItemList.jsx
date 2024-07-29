@@ -2,19 +2,6 @@
 import Item from'../Item/Item'
 import'./ItemList.css'
 
-{/* const ItemList=({genre})=>{
-    const filteredItems=items.filter(product=>product.genre.includes(genre))
-
-    return(
-        <div className='item-list'>
-            <h2>Libros de la categoría:{genre}</h2>
-            {filteredItems.map(product=>(
-                <Item key={product.id} product={product}/>
-            ))}
-        </div>
-    )
-} */}
-
 const ItemList=({items,genre})=>{
 
     let filteredItems=items
@@ -30,7 +17,7 @@ const ItemList=({items,genre})=>{
     return(
         <>
             <div className='item-list'>
-                {genre?<h2>Libros de {genre}</h2>: <div>Libros</div>}
+                {genre?<h2>Libros de {genre}</h2>:<div/>}
                 {filteredItems.map(product=>{
                     return<Item key={product.id} product={product}/>
                 })}

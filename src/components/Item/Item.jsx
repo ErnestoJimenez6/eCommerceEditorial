@@ -4,9 +4,6 @@ import'./Item.css'
 const Item=({product})=>{
     return(
         <>
-            {/*<div className='item'>
-                <div>Item</div>
-            </div>*/}
             <div className='item'>
                 <img src={product.image} alt=''/>
                 <div>{product.name}</div>

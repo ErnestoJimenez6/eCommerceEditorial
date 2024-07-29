@@ -28,10 +28,10 @@ const ItemListContainer=({title})=>{
         <>
             <button onClick={()=>
                 setGenre('Fantasía')
-            }>Set genre = Fantasía</button>
+            }>Fantasía</button>
             <button onClick={()=>
                 setGenre('Terror')
-            }>Set genre = Terror</button>
+            }>Terror</button>
             <div className='item-list-container'>
                 <div>{title}</div>
                 <ItemList items={products} genre={genre}/>

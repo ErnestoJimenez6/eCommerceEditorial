@@ -10,7 +10,7 @@ export const getProducts=(genre)=>{
         if(items.length>0){
             setTimeout(()=>{
                 resolve(filteredItems)
-            },2000)
+            },1000)
         }else{
             reject('No hay productos disponibles')
         }

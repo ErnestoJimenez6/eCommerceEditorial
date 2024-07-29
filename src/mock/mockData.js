@@ -4,7 +4,7 @@ export const genres=[
     'Terror'
 ]
 
-export const products=[
+export const items=[
     {
         id:1,
         name:'¿Sueñan los androides con ovejas eléctricas?',

@@ -3,35 +3,35 @@ import Item from'../Item/Item'
 import'./ItemList.css'
 
 {/* const ItemList=({genre})=>{
-    const filteredProducts=products.filter(product=>product.genre.includes(genre))
+    const filteredItems=items.filter(product=>product.genre.includes(genre))
 
     return(
         <div className='item-list'>
             <h2>Libros de la categoría:{genre}</h2>
-            {filteredProducts.map(product=>(
+            {filteredItems.map(product=>(
                 <Item key={product.id} product={product}/>
             ))}
         </div>
     )
 } */}
 
-const ItemList=({products,genre})=>{
+const ItemList=({items,genre})=>{
 
-    let filteredProducts=products
+    let filteredItems=items
 
     if(genre){
-        filteredProducts=products.filter(product=>product.genre&&product.genre.includes(genre))
+        filteredItems=items.filter(product=>product.genre&&product.genre.includes(genre))
     }
 
-    if(!filteredProducts||filteredProducts.length===0){
-        return<div>No hay productos disponibles.</div>
+    if(!filteredItems||filteredItems.length===0){
+        return<div>No hay libros disponibles.</div>
     }
 
     return(
         <>
             <div className='item-list'>
-                {genre?<h2>Libros de la categoría: {genre}</h2>: <div>Libros</div>}
-                {filteredProducts.map(product=>{
+                {genre?<h2>Libros de {genre}</h2>: <div>Libros</div>}
+                {filteredItems.map(product=>{
                     return<Item key={product.id} product={product}/>
                 })}
             </div>

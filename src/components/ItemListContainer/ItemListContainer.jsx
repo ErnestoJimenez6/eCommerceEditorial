@@ -1,17 +1,40 @@
 /* eslint-disable react/prop-types */
+import{useState,useEffect}from'react'
 import ItemList from'../ItemList/ItemList'
 import'./ItemListContainer.css'
-import{products}from'../../mock/mockData'
+import{getProducts}from'../../utils/fetchData'
 
 const ItemListContainer=({title})=>{
+    const[products,setProducts]=useState([])
+    const[genre,setGenre]=useState('Ciencia Ficción')
 
-    // const products=[]
+    useEffect(()=>{
+        console.log('Se montó el componente')
+        getProducts(genre)
+            .then((res)=>{
+                console.log('Se resolvió la promesa')
+                setProducts(res)
+                console.log('Se atualizaron los productos')
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+            .finally(()=>{
+                console.log('Finalizó la promesa')
+            })
+    },[genre])
 
     return(
         <>
+            <button onClick={()=>
+                setGenre('Fantasía')
+            }>Set genre = Fantasía</button>
+            <button onClick={()=>
+                setGenre('Terror')
+            }>Set genre = Terror</button>
             <div className='item-list-container'>
                 <div>{title}</div>
-                <ItemList products={products}/>
+                <ItemList items={products} genre={genre}/>
             </div>
         </>
     )

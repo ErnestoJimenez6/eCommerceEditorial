@@ -26,9 +26,9 @@ const ItemListContainer=({title})=>{
 
     return(
         <>
-        <button onClick={()=>
-            setGenre('Ciencia Ficción')
-        }>Ciencia Ficción</button>
+            <button onClick={()=>
+                setGenre('Ciencia Ficción')
+            }>Ciencia Ficción</button>
             <button onClick={()=>
                 setGenre('Fantasía')
             }>Fantasía</button>

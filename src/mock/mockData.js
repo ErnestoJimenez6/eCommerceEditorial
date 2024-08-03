@@ -78,7 +78,9 @@ export const items=[
 export const getProductById=(productId)=>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
-            resolve(products.find(prod=>prod.id===productId))
+            resolve(products.find(prod=>
+                prod.id===productId
+            ))
         },500)
     })
 }
@@ -86,7 +88,9 @@ export const getProductById=(productId)=>{
 export const getProductsBygenre=(genreId)=>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
-            resolve(products.filter(product=>product.genre.includes(genreId)))
+            resolve(products.filter(product=>
+                product.genre.includes(genreId)
+            ))
         },500)
     })
 } */}

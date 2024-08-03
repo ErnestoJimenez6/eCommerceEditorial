@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import{items}from'../mock/mockData'
 
 export const getProducts=(genre)=>{

@@ -1,7 +1,12 @@
+import Contact from "../components/Contact/Contact"
+
 export const genres=[
+    'Home',
     'Ciencia Ficción',
     'Fantasía',
-    'Terror'
+    'Terror',
+    'Contact',
+    'AboutUs'
 ]
 
 export const items=[

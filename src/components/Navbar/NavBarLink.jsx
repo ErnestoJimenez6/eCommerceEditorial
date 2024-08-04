@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
-export const NavBarLink=({genre})=>{
+import{Link,NavLink}from'react-router-dom'
+
+const NavBarLink=({genre})=>{
     return(
         <li className='nav-item'>
-            <a className='nav-link' aria-current='page' href='#'>{genre}</a>
+            <Link to={`/${genre}`} className='nav-link' aria-current='page'>
+                {genre}
+            </Link>
         </li>
     )
 }

@@ -6,7 +6,7 @@ import{genres}from'../../mock/mockData'
 import{Link}from'react-router-dom'
 {/*import{Button,Container,Form,Nav,Navbar,Offcanvas}from'react-bootstrap'*/}
 
-const Navbar=()=>{
+const NavBar=()=>{
     return(
         <>
             {/* {[false,'sm','md','lg','xl','xxl'].map((expand)=>(
@@ -60,4 +60,4 @@ const Navbar=()=>{
     )
 }
 
-export default Navbar
+export default NavBar

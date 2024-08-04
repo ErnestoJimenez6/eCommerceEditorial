@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import Item from'../Item/Item'
-import'./ItemList.css'
 
 const ItemList=({items,genre})=>{
 
@@ -16,7 +15,7 @@ const ItemList=({items,genre})=>{
 
     return(
         <>
-            <div className='item-list'>
+            <div className='row justify-content-center align-items-stretch'>
                 {genre?<h2>Libros de {genre}</h2>:<div/>}
                 {filteredItems.map(product=>{
                     return<Item key={product.id} product={product}/>

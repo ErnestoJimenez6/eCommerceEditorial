@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import{useState,useEffect}from'react'
 import ItemList from'../ItemList/ItemList'
-import'./ItemListContainer.css'
 import{getProducts}from'../../utils/fetchData'
 
 const ItemListContainer=({title})=>{
@@ -35,7 +34,7 @@ const ItemListContainer=({title})=>{
             <button onClick={()=>
                 setGenre('Terror')
             }>Terror</button>
-            <div className='item-list-container'>
+            <div className='container'>
                 <div>{title}</div>
                 <ItemList items={products} genre={genre}/>
             </div>

@@ -1,5 +1,20 @@
-body {
-    background-color: #222;
-    color: #ddd;
-    font-size: 16px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#222;
+    color:#ddd;
+    font-size:16px;
+}
+
+html{
+    font-family:'creepster',sans-serif;
+}
+
+.tituloDePag{
+    font-size:2rem;
+    text-align:center;
 }

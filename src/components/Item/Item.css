@@ -1,9 +1,18 @@
-.item{
-    background-color:#333;
-    padding:20px;
-    margin:10px;
-    border-radius:5px;
-    color:#ddd;
-    align-items:center;
-    justify-content:center;
+.card{
+    background-color:#212121;
+    color:#ffffff;
+}
+
+.card-title{
+    color:#4dff00;
+}
+  
+.btn{
+    background-color:#b30000;
+    border-color:#b30000;
+}
+.btn:hover{
+    background-color:#212121;
+    border-color:#b30000;
+    color:#4dff00;
 }

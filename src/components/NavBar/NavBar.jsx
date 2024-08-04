@@ -3,34 +3,38 @@ import CartWidget from'../CartWidget/CartWidget'
 import NavBarLink from'./NavBarLink'
 import logo from'../../assets/logo.png'
 import{genres}from'../../mock/mockData'
-import{Link}from'react-router-dom'
-{/*import{Button,Container,Form,Nav,Navbar,Offcanvas}from'react-bootstrap'*/}
+import{Container,Nav,Navbar,Offcanvas}from'react-bootstrap'
 
 const NavBar=()=>{
     return(
         <>
-            {/* {[false,'sm','md','lg','xl','xxl'].map((expand)=>(
-                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-                    <Container fluid>
-                        <Navbar.Brand href="#">Editorial Mar Negro</Navbar.Brand>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-                        <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement='end'
-                        >
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>Editorial Mar Negro</Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">Home</Nav.Link>
-                                    <Nav.Link href="#action2">Link</Nav.Link>
-                                </Nav>
-                            </Offcanvas.Body>
-                        </Navbar.Offcanvas>
-                    </Container>
-                </Navbar>        
-            ))} */}
+            <Navbar expand='lg' className='navbar navbar-expand-lg mb-3' data-bs-theme='dark'>
+                <Container fluid>
+                    <Navbar.Brand href='#'>
+                        <img src={logo} alt='Logo' height='100' className='d-inline-block align-top'/>
+                        Editorial Mar Negro
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls='offcanvasNavbar'/>
+                    <Navbar.Offcanvas id='offcanvasNavbar' aria-labelledby='offcanvasNavbarLabel' placement='end'>
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title id='offcanvasDakNavbarLabel'>
+                                <img src={logo} alt='Logo' height='100' className='d-inline-block align-top'/>
+                                Editorial Mar Negro
+                            </Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <Nav className='justify-content-around flex-grow-1 pe-3'>
+                                {genres.map((element, index)=>(
+                                    <NavBarLink key={index} genre={element}/>
+                                ))}
+                            </Nav>
+                            <CartWidget/>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
 
-            <nav className='navbar navbar-expand-lg' data-bs-theme='dark'>
+            {/*<nav className='navbar navbar-expand-lg' data-bs-theme='dark'>
                 <div className='container-fluid'>
                     <Link className='navbar-brand' href='#'>
                         <img src={logo} alt='Logo' height='100'/>Editorial Mar Negro
@@ -55,7 +59,7 @@ const NavBar=()=>{
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav>*/}
         </>
     )
 }

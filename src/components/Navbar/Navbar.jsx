@@ -4,10 +4,32 @@ import NavBarLink from'./NavBarLink'
 import logo from'../../assets/logo.png'
 import{genres}from'../../mock/mockData'
 import{Link}from'react-router-dom'
+{/*import{Button,Container,Form,Nav,Navbar,Offcanvas}from'react-bootstrap'*/}
 
 const Navbar=()=>{
     return(
         <>
+            {/* {[false,'sm','md','lg','xl','xxl'].map((expand)=>(
+                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+                    <Container fluid>
+                        <Navbar.Brand href="#">Editorial Mar Negro</Navbar.Brand>
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                        <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end"
+                        >
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>Editorial Mar Negro</Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-end flex-grow-1 pe-3">
+                                    <Nav.Link href="#action1">Home</Nav.Link>
+                                    <Nav.Link href="#action2">Link</Nav.Link>
+                                </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </Container>
+                </Navbar>        
+            ))} */}
+
             <nav className='navbar navbar-expand-lg' data-bs-theme='dark'>
                 <div className='container-fluid'>
                     <Link className='navbar-brand' href='#'>
@@ -33,7 +55,7 @@ const Navbar=()=>{
                         </div>
                     </div>
                 </div>
-            </nav>      
+            </nav>
         </>
     )
 }

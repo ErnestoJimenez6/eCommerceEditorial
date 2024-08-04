@@ -16,7 +16,7 @@ const ItemListContainer=({title})=>{
                 console.log('Se atualizaron los productos')
             })
             .catch((err)=>{
-                console.log(err)
+                console.error('Error al obtener productos:',err)
             })
             .finally(()=>{
                 console.log('Finalizó la promesa')

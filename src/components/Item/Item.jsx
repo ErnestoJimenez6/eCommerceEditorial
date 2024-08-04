@@ -1,9 +1,23 @@
-import'./Item.css'/* eslint-disable react/prop-types */
-
+/* eslint-disable react/prop-types */
+import'./Item.css'
+{/*import{Card,Button}from'react-bootstrap'*/}
 
 const Item=({product})=>{
     return(
         <>
+
+            {/*<Card style={{width:'18rem'}}>
+                <Card.Img variant='top' src={product.image} alt={product.name}/>
+                <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text>{product.author}</Card.Text>
+                    <Card.Text>{product.genre}</Card.Text>
+                    <Card.Text>{product.decription}</Card.Text>
+                    <Card.Text>{product.price}</Card.Text>
+                    <Button variant='primary'>COMPRAR</Button>
+                </Card.Body>
+            </Card>*/}
+
             <div className='col-md-4 mb-4'>
                 <div className='card h-100 text-bg-dark border-danger'>
                     <img src={product.image} className='card-img-top' alt={product.name}/>

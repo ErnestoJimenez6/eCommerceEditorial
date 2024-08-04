@@ -1,10 +1,10 @@
 import{BrowserRouter,Routes,Route}from'react-router-dom'
 import'./App.css'
-import AboutUs from './components/AboutUs/AboutUs.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import AboutUs from'./components/AboutUs/AboutUs.jsx'
+import Contact from'./components/Contact/Contact.jsx'
 import ItemListContainer from'./components/ItemListContainer/ItemListContainer.jsx'
 import Layout from'./pages/Layout.jsx'
-import Error404 from './components/Error404/Error404.jsx'
+import Error404 from'./components/Error404/Error404.jsx'
 
 function App(){
   const title='Editorial Mar Negro'

@@ -9,7 +9,7 @@ const Footer=()=>{
         <footer className='bg-dark text-light py-3'>
             <Container>
                 <Row className="justify-content-center">
-                    <Col xs={12}>
+                    <Col xs={12} className="text-center">
                         <p>EDITORIAL MAR NEGRO - Todos los derechos reservados</p>
                     </Col>
                     <Col xs="auto">

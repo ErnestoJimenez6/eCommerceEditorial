@@ -2,7 +2,7 @@
 import CartWidget from'../CartWidget/CartWidget'
 import NavBarLink from'./NavBarLink'
 import logo from'../../assets/logo.png'
-import{genres}from'../../mock/mockData'
+import{categories}from'../../mock/mockData'
 import Container from'react-bootstrap/Container'
 import Nav from'react-bootstrap/Nav'
 import Navbar from'react-bootstrap/Navbar'
@@ -27,8 +27,8 @@ const NavBar=()=>{
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className='justify-content-around flex-grow-1 pe-3'>
-                                {genres.map((element,index)=>(
-                                    <NavBarLink key={index} genre={element}/>
+                                {categories.map((element,index)=>(
+                                    <NavBarLink key={index} category={element}/>
                                 ))}
                             </Nav>
                             <CartWidget/>

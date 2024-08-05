@@ -1,8 +1,8 @@
 import{items}from'../mock/mockData'
 
-export const getProducts=(genre)=>{
+export const getProducts=(category)=>{
     const filteredItems=items.filter((item)=>
-        item.genre==genre
+        item.category==category
     )
 
     return new Promise((resolve,reject)=>{

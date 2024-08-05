@@ -1,29 +1,34 @@
-import'./Footer.css'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import{Link}from'react-router-dom'
+import'./Footer.css'
 
 const Footer=()=>{
     return(
-        <footer>
-            <div className='container'>
-                <div className='row justify-content-center'>
-                    <p>EDITORIAL MAR NEGRO - Todos los derechos reservados</p>
-                    <div className='col-auto'>
-                        <Link className='text-light' href='http://facebook.com'>
-                            <img src='' alt='facebook'/>
+        <footer className='bg-dark text-light py-3'>
+            <Container>
+                <Row className="justify-content-center">
+                    <Col xs={12}>
+                        <p>EDITORIAL MAR NEGRO - Todos los derechos reservados</p>
+                    </Col>
+                    <Col xs="auto">
+                        <Link className="text-light" to="http://facebook.com">
+                            <img src="path-to-facebook-logo" alt="facebook" />
                         </Link>
-                    </div>
-                    <div className='col-auto'>
-                        <Link className='text-light' href='http://instagram.com'>
-                            <img src='' alt='instagram'/>
+                    </Col>
+                    <Col xs="auto">
+                        <Link className="text-light" to="http://instagram.com">
+                            <img src="path-to-instagram-logo" alt="instagram" />
                         </Link>
-                    </div>
-                    <div className='col-auto'>
-                        <Link className='text-light' href='https://twitter.com/'>
-                            <img src='' alt='twitter'/>
+                    </Col>
+                    <Col xs="auto">
+                        <Link className="text-light" to="https://twitter.com/">
+                            <img src="path-to-twitter-logo" alt="twitter" />
                         </Link>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     )
 }

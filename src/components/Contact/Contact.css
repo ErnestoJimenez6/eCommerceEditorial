@@ -1,73 +1,78 @@
-.contacto-container{
-    display:flex;
-    border:1px;
-    margin:20px;
+.contacto-container {
+    display: flex;
+    border: 1px solid transparent;
+    margin: 20px;
 }
-  
-.contactoTexto{
-    margin:20px;
-    text-align:center;
+
+.contactoTexto {
+    margin: 20px;
+    text-align: center;
 }
-  
-/*iframe*/
-.iframe-container{
-    flex:1;
-    padding:20px;
-    width:50%;
+
+/* iframe */
+.iframe-container {
+    flex: 1;
+    padding: 20px;
+    width: 50%;
 }
-.iframe-container iframe{
-    width:100%;
-    height:100%;
-    border-radius:5px;
-    max-width:100%;
-    display:block;
-    margin:0 auto;
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
-  
-/*formulario*/
-.formContainer{
-    flex:1;
-    padding:20px;
-    width:50%;
+
+/* formulario */
+.formContainer {
+    flex: 1;
+    padding: 20px;
+    width: 50%;
 }
-.formContainer form{
-    margin:20px;
-    padding:20px;
-    border-radius:5px;
-    text-align:center;
+
+.formContainer form {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
+
 .formContainer input[type=text],
 .formContainer input[type=email],
-.formContainer textarea{
-    width:100%;
-    padding:8px;
-    margin-bottom:10px;
-    border:1px solid #b30000;
-    border-radius:3px;
-    box-sizing:border-box;
+.formContainer textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b30000;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
+
 .formContainer input[type=text]:focus,
 .formContainer input[type=email]:focus,
 .formContainer textarea:focus {
-    border:#4dff00 4px solid;
-    transition:background-color 0.3s ease;
+    border: #4dff00 4px solid;
+    transition: background-color 0.3s ease;
 }
-.formContainer textarea{
-    height:100px;
+
+.formContainer textarea {
+    height: 100px;
 }
-.formContainer
-.btnFormulario{
-    background-color:#b30000;
-    color:#ffffff;
-    padding:10px 20px;
-    border:none;
-    border-radius:3px;
-    cursor:pointer;
-    transition:background-color 0.3s ease;
+
+.formContainer .btnFormulario {
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.formContainer
-.btnFormulario:hover{
-    background-color:#212121;
-    border-color:#b30000;
-    color:#4dff00;
+
+.formContainer .btnFormulario:hover {
+    background-color: #212121;
+    border-color: #b30000;
+    color: #4dff00;
 }

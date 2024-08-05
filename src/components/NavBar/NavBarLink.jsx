@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
-import{NavLink}from'react-router-dom'
+import{Nav}from'react-bootstrap'
+import{NavLink as RouterNavLink}from'react-router-dom'
 
-const NavBarLink=({genre})=>{
+const NavBarLink=({genre,onClick})=>{
     return(
-        <li className='nav-item'>
-            <NavLink to={`/${genre}`} className='nav-link' aria-current='page'>
+        <Nav.Item>
+            <Nav.Link as={RouterNavLink} to={`/${genre}`} onClick={onClick} className='nav-link'>
                 {genre}
-            </NavLink>
-        </li>
+            </Nav.Link>
+        </Nav.Item>
     )
 }
 

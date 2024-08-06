@@ -13,7 +13,7 @@ const NavBar=()=>{
         <>
             <Navbar expand='lg' className='mb-3' data-bs-theme='dark'>
                 <Container fluid>
-                    <Navbar.Brand href='#'>
+                    <Navbar.Brand href='/'>
                         <img src={logo} alt='Logo' height='100' className='d-inline-block'/>
                         Editorial Mar Negro
                     </Navbar.Brand>

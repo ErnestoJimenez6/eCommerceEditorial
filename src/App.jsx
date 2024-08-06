@@ -5,6 +5,7 @@ import Contact from'./components/Contact/Contact.jsx'
 import ItemListContainer from'./components/ItemListContainer/ItemListContainer.jsx'
 import Layout from'./pages/Layout.jsx'
 import Error404 from'./components/Error404/Error404.jsx'
+import ItemDetailContainer from'./components/ItemDetailContainer/ItemDetailContainer.jsx'
 
 function App(){
   const title='Editorial Mar Negro'
@@ -14,9 +15,9 @@ function App(){
       <BrowserRouter>
         <Layout>
           <Routes>
-          <Route path='/' element={<ItemListContainer title={title}/>}/>
-            <Route path='/Home' element={<ItemListContainer title={title}/>}/>
-            <Route path='/category/:categoryId' element={<ItemListContainer title={title}/>}/>
+            <Route path='/' element={<ItemListContainer title={title}/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer title={title}/>}/>  
+            <Route path='/product/:id' element={<ItemDetailContainer/>}/>
             <Route path='/Contact' element={<Contact/>}/>
             <Route path='/AboutUs' element={<AboutUs/>}/>
             <Route path='*' element={<Error404/>}/>

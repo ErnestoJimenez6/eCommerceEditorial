@@ -1,13 +1,7 @@
-//import Contact from'../components/Contact/Contact'
-//import AboutUs from'../components/AboutUs/AboutUs'
-
 export const categories=[
-    'Home',
     'Ciencia Ficción',
     'Fantasía',
-    'Terror',
-    'Contact',
-    'AboutUs'
+    'Terror'
 ]
 
 export const items=[

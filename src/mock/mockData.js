@@ -1,4 +1,5 @@
-import Contact from'../components/Contact/Contact'
+//import Contact from'../components/Contact/Contact'
+//import AboutUs from'../components/AboutUs/AboutUs'
 
 export const categories=[
     'Home',

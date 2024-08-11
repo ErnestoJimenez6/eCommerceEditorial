@@ -1,9 +1,19 @@
-footer img {
+footer svg {
     width: 25px;
     margin: 0 10px;
     transition: filter 0.3s ease;
 }
 
-footer a:hover img {
-    filter: drop-shadow(0px 0px 10px #ffffff);
+footer a:hover svg {
+    filter: drop-shadow(0px 0px 25px #4dff00);
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
 }

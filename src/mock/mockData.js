@@ -13,7 +13,7 @@ export const items=[
         price:15000,
         category:['Ciencia Ficción'],
         stock:'',
-        image:''
+        image:'src/assets/SuenianAndroides.png'
     },
     {
         id:2,
@@ -23,7 +23,7 @@ export const items=[
         price:20000,
         category:['Ciencia Ficción'],
         stock:'',
-        image:''
+        image:'src/assets/Neuromante.png'
     },
     {
         id:3,
@@ -33,7 +33,7 @@ export const items=[
         price:20000,
         category:['Fantasía'],
         stock:'',
-        image:''
+        image:'src/assets/EstacionCallePerdido.png'
     },
     {
         id:4,
@@ -43,7 +43,7 @@ export const items=[
         price:10000,
         category:['Fantasía'],
         stock:'',
-        image:''
+        image:'src/assets/AmericanGods.png'
     },
     {
         id:5,
@@ -53,7 +53,7 @@ export const items=[
         price:10000,
         category:['Terror'],
         stock:'',
-        image:''
+        image:'src/assets/Metro2033.png'
     },
     {
         id:6,
@@ -63,7 +63,7 @@ export const items=[
         price:15000,
         category:['Terror'],
         stock:'',
-        image:''
+        image:'src/assets/ReinoNoche.png'
     }
 ]
 

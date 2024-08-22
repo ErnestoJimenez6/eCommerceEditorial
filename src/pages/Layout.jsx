@@ -8,7 +8,6 @@ const Layout=({children})=>{
         <>
             <NavBar/>
             {children}
-            <ItemCount stock={10} initial={1}/>
             <Footer/>
         </>
     )

@@ -1,9 +1,12 @@
 import'./AboutUs.css'
+import{useCartContext}from'../../context/CartContext'
 
 const AboutUs=()=>{
+    const{titulo}=useCartContext()
+
     return (
         <>
-            <h1 className='tituloDePag'>About us</h1>
+            <h1 className='tituloDePag'>Sobre {titulo}</h1>
 
             <section className='AboutUs'>
                 <div>

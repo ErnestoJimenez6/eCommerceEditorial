@@ -2,12 +2,15 @@ import'./Contact.css'
 import Form from'react-bootstrap/Form'
 import Button from'react-bootstrap/Button'
 import Container from'react-bootstrap/Container'
+import{useCartContext}from '../../context/CartContext'
 
 const Contact=()=>{
+    const {titulo}=useCartContext()
+
     return(
         <>
             <Container>
-                <h1 className='tituloDePag'>Contact</h1>
+                <h1 className='tituloDePag'>Contacto de {titulo}</h1>
                 <p className='contactoTexto'>
                     Si tenés alguna pregunta sobre nuestros libros o cualquier otra duda, envianos un correo electrónico completando el siguiente formulario.
                 </p>

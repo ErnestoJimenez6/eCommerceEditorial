@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
 import{useState,useEffect}from'react'
+import{useCartContext}from'../../context/CartContext'
 import ItemList from'../ItemList/ItemList'
 import{getProducts}from'../../utils/fetchData'
 import{useParams}from'react-router-dom'
 import Spinner from'../Spinner/Spinner'
 
-const ItemListContainer=({title})=>{
+const ItemListContainer=()=>{
     const[products,setProducts]=useState([])
-    const[loading,setLoading]=useState(true)
     const{categoryId}=useParams()
+    const[loading,setLoading]=useState(true)
+    const{titulo}=useCartContext()
+
+    let title=titulo
 
     useEffect(()=>{
         setLoading(true)

@@ -12,13 +12,23 @@ const Item=({product})=>{
                 <Card className='h-100 text-bg-dark border-danger'>
                     <Card.Img variant='top' src={product.image} alt={product.name} className='card-img-top'/>
                     <Card.Body>
-                        <Card.Title className='card-title text-center'>{product.name}</Card.Title>
-                        <Card.Text className='card-text text-center'>{product.author}</Card.Text>
-                        <Card.Text className='card-text text-center'>{product.category}</Card.Text>
-                        <Card.Text className='card-text text-center'>${product.price}</Card.Text>
+                        <Card.Title className='card-title text-center'>
+                            {product.name}
+                        </Card.Title>
+                        <Card.Text className='card-text text-center'>
+                            {product.author}
+                        </Card.Text>
+                        <Card.Text className='card-text text-center'>
+                            {product.category}
+                        </Card.Text>
+                        <Card.Text className='card-text text-center'>
+                            ${product.price}
+                        </Card.Text>
                         <div className='text-center'>
                             <Link to={`/product/:${product.id}`}>
-                                <Button variant='primary' className='btn'>Ver</Button>
+                                <Button variant='primary' className='btn'>
+                                    Ver
+                                </Button>
                             </Link>
                         </div>
                     </Card.Body>

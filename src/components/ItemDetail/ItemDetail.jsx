@@ -1,12 +1,15 @@
 /* eslint-disable react/prop-types */
-import Button from'react-bootstrap/Button'
 import Card from'react-bootstrap/Card'
 import ItemCount from'../ItemCount/ItemCount'
+import{useCartContext}from'../../context/CartContext'
 
-const ItemDetail=({name,author,description,price,category,stock,image})=>{
+const ItemDetail=({id,name,author,description,price,stock,image})=>{
+    const{addToCart}=useCartContext()
 
     const handleOnBuy=(qty)=>{
         console.log(`Se agregaron ${qty} productos al carrito`)
+        const item={id,name,author,description,price}
+        addToCart(item,qty)
     }
 
     return(
@@ -18,9 +21,6 @@ const ItemDetail=({name,author,description,price,category,stock,image})=>{
                 </Card.Title>
                 <Card.Text className='card-text text-center'>
                     {author}
-                </Card.Text>
-                <Card.Text className='card-text text-center'>
-                    {category}
                 </Card.Text>
                 <Card.Text className='card-text text-center'>
                     {description}

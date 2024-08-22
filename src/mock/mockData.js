@@ -1,7 +1,9 @@
 export const categories=[
     'Ciencia Ficción',
     'Fantasía',
-    'Terror'
+    'Terror',
+    'Contact',
+    'AboutUs'
 ]
 
 export const items=[

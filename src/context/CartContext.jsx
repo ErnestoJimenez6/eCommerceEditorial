@@ -56,14 +56,34 @@ const CartContextProvider=({children})=>{
         localStorage.setItem('qty',JSON.stringify(qty))
     }
 
-    //completar
-    const removeItem=()=>{}
-    const clearCart=()=>{}
+    const removeItem=(id,price,qty)=>{
+        setTotal(total-price*qty)
+        setQtyItems(qtyItems-qty)
+
+        const newCart=cart.filter((elem)=>elem.id!==id)
+
+        setCart(newCart)
+        localStorage.setItem('cart',JSON.stringify(newCart))
+        localStorage.setItem('total',JSON.stringify(total))
+        localStorage.setItem('qty',JSON.stringify(qty))
+    }
+
+    const clearCart=()=>{
+        setCart([])
+        setTotal(0)
+        setQtyItems(0)
+        localStorage.removeItem('cart')
+        localStorage.removeItem('total')
+    }
 
     const contextValue={
         titulo:'Editorial Mar Negro',
         qtyItems,
-        addToCart
+        total,
+        cart,
+        addToCart,
+        clearCart,
+        removeItem
     }
 
     return <Provider value={contextValue}>{children}</Provider>

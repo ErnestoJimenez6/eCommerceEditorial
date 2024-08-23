@@ -14,7 +14,7 @@ export const items=[
         description:'En un futuro post-apocalíptico, los cazadores de androides enfrentan la difusa línea entre humanidad y máquina.',
         price:15000,
         category:['Ciencia Ficción'],
-        stock:'',
+        stock:10,
         image:'src/assets/SuenianAndroides.png'
     },
     {

@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100%;
+    height:100%;
     background-color:#000000;
     color:#ddd;
     font-size:16px;
@@ -14,5 +14,5 @@ body{
 .tituloDePag{
     font-size:2rem;
     text-align:center;
-    color: #4dff00;
+    color:#8cff5b;
 }

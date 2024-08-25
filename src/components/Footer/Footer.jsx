@@ -3,9 +3,9 @@ import Row from'react-bootstrap/Row'
 import Col from'react-bootstrap/Col'
 import{Link}from'react-router-dom'
 import'./Footer.css'
-import{items}from'../../mock/mockData'
+{/*import{items}from'../../mock/mockData'
 import{db}from'../../firebase/dbConection'
-import{collection,addDoc}from'firebase/firestore'
+import{collection,addDoc}from'firebase/firestore'*/}
 
 const socialLinks=[
     {
@@ -60,7 +60,7 @@ const socialLinks=[
 
 const Footer=()=>{
 
-    const addProducts=()=>{
+    {/*const addProducts=()=>{
         const productsCollection=collection(db,'productos')
 
         items.forEach((item)=>{
@@ -72,7 +72,7 @@ const Footer=()=>{
                 console.log('Error al agregar el producto: ',error)
             })
         })
-    }
+    }*/}
 
     return(
         <footer className='bg-dark text-light py-3'>
@@ -90,7 +90,7 @@ const Footer=()=>{
                     ))}
                 </Row>
             </Container>
-            <button onClick={addProducts}>Agregar productos a base de datos</button>
+            {/*<button onClick={addProducts}>Agregar productos a base de datos</button>*/}
         </footer>
     )
 }

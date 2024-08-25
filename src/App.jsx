@@ -8,9 +8,8 @@ import Layout from'./pages/Layout'
 import Error404 from'./components/Error404/Error404'
 import ItemDetailContainer from'./components/ItemDetailContainer/ItemDetailContainer'
 import Cart from'./components/Cart/Cart'
-function App(){
-  //const title='Editorial Mar Negro'
 
+function App(){
   return(
     <CartContextProvider>
       <BrowserRouter>

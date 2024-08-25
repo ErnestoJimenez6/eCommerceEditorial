@@ -25,7 +25,7 @@ const Item=({product})=>{
                             ${product.price}
                         </Card.Text>
                         <div className='text-center'>
-                            <Link to={`/product/:${product.id}`}>
+                            <Link to={`/product/${product.id}`}>
                                 <Button variant='primary' className='btn'>
                                     Ver
                                 </Button>

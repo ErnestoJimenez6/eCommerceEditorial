@@ -1,14 +1,14 @@
 .card-title{
-    color:#4dff00 !important;
+    color:#8cff5b !important;
 }
 
 .btn{
-    background-color:#b30000 !important;
-    border-color:#b30000 !important;
+    background-color:#dc3545 !important;
+    border-color:#dc3545 !important;
 }
 
-.btn:hover {
+.btn:hover{
     background-color:#212121 !important;
-    border-color:#b30000 !important;
-    color:#4dff00 !important;
+    border-color:#dc3545 !important;
+    color:#8cff5b !important;
 }

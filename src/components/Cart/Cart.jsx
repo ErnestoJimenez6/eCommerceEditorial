@@ -3,6 +3,7 @@ import{Table}from'react-bootstrap'
 import{useState}from'react'
 import{addDoc,collection}from'firebase/firestore'
 import{db}from'../../firebase/dbConection'
+import './Cart.css'
 
 const Cart=()=>{
     const{cart,total,removeItem,clearCart}=useCartContext()
@@ -46,7 +47,7 @@ const Cart=()=>{
     }
 
     return(
-        <>
+        <div className='cart-container'>
             <Table striped bordered hover variant='dark'>
                 <thead>
                     <tr>
@@ -88,7 +89,7 @@ const Cart=()=>{
             <input type='number' name='tel' id='tel' placeholder='ingrese su teléfono' onChange={(e)=>handleOnChange(e)}/>
             <input type='email' name='email' id='email' placeholder='ingrese su email' onChange={(e)=>handleOnChange(e)}/>
             <button onClick={handleSaveCart}>Finalizar Compra</button>
-        </>
+        </div>
     )
 }
 

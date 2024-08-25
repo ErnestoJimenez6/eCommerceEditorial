@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import{useState,useEffect}from'react'
+import{collection,getDocs,query,where}from'firebase/firestore'
+import{db}from'../../firebase/dbConection'
 import{useCartContext}from'../../context/CartContext'
 import ItemList from'../ItemList/ItemList'
-import{getProducts}from'../../utils/fetchData'
 import{useParams}from'react-router-dom'
 import Spinner from'../Spinner/Spinner'
 
@@ -16,16 +17,25 @@ const ItemListContainer=()=>{
 
     useEffect(()=>{
         setLoading(true)
-        getProducts(categoryId)
-            .then((res)=>{
-                setProducts(res)
-            })
-            .catch((err)=>{
-                console.error('Error al obtener productos:',err)
-            })
-            .finally(()=>{
-                setLoading(false)
-            })
+        
+        let productsCollection=collection(db,'productos')
+
+        if(categoryId){
+            productsCollection=query(productsCollection,where('category','array-contains',categoryId))
+        }
+
+        getDocs(productsCollection)
+        .then(({docs})=>{
+            const prodFromDocs=docs.map((doc)=>({
+                id:doc.id,
+                ...doc.data()
+            }))
+            setProducts(prodFromDocs)
+            setLoading(false)
+        })
+        .catch((error)=>{
+            console.error('Error getting docmuents: ',error)
+        })
     },[categoryId])
 
     return(

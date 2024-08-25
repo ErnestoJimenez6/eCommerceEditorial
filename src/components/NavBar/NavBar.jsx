@@ -21,8 +21,10 @@ const NavBar=()=>{
                     <Navbar.Offcanvas id='offcanvasNavbar' aria-labelledby='offcanvasNavbarLabel' placement='end' className='text-bg-dark'>
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id='offcanvasNavbarLabel'>
-                                <img src={logo} alt='Logo' height='100' className='d-inline-block'/>
-                                Editorial Mar Negro
+                                <Navbar.Brand href='/'>
+                                    <img src={logo} alt='Logo' height='100' className='d-inline-block'/>
+                                    Editorial Mar Negro
+                                </Navbar.Brand>
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>

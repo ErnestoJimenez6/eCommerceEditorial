@@ -13,7 +13,7 @@ const ItemDetail=({id,name,author,description,price,stock,image})=>{
     }
 
     return(
-        <Card className='h-100 text-bg-dark border-danger'>
+        <Card className='h-100 text-bg-dark border-danger text-center'>
             <Card.Img variant='top' src={image} alt={name} className='card-img-top'/>
             <Card.Body>
                 <Card.Title className='card-title text-center'>

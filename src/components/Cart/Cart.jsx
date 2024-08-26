@@ -3,7 +3,7 @@ import{Table}from'react-bootstrap'
 import{useState}from'react'
 import{addDoc,collection}from'firebase/firestore'
 import{db}from'../../firebase/dbConection'
-import './Cart.css'
+import'./Cart.css'
 
 const Cart=()=>{
     const{cart,total,removeItem,clearCart}=useCartContext()
@@ -83,11 +83,11 @@ const Cart=()=>{
                     </tr>
                 </tbody>
             </Table>
-            <button onClick={handleClearCart}>Limpiar carrito</button>
+            <button onClick={handleClearCart}>Limpiar carrito </button>
 
             <input type='text' name='name' id='name' placeholder='ingrese su nombre' onChange={(e)=>handleOnChange(e)}/>
             <input type='number' name='tel' id='tel' placeholder='ingrese su teléfono' onChange={(e)=>handleOnChange(e)}/>
-            <input type='email' name='email' id='email' placeholder='ingrese su email' onChange={(e)=>handleOnChange(e)}/>
+            <input type='email' name='email' id='email' placeholder='ingrese su email'  onChange={(e)=>handleOnChange(e)}/>
             <button onClick={handleSaveCart}>Finalizar Compra</button>
         </div>
     )

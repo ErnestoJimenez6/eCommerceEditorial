@@ -34,10 +34,3 @@ export const getProductById=(id)=>{
         },1000)
     })
 }
-
-//para API
-{/*export const getCategories=()=>{
-    return fetch('').then((res)=>{
-        return res.json()
-    })
-}*/}

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import{Link}from'react-router-dom'
 import CartWidget from'../CartWidget/CartWidget'
 import NavBarLink from'./NavBarLink'
 import logo from'../../assets/logo.png'
@@ -13,7 +14,7 @@ const NavBar=()=>{
         <>
             <Navbar expand='lg' className='mb-3' data-bs-theme='dark'>
                 <Container fluid>
-                    <Navbar.Brand href='/'>
+                    <Navbar.Brand as={Link} to='/'>
                         <img src={logo} alt='Logo' height='100' className='d-inline-block'/>
                         Editorial Mar Negro
                     </Navbar.Brand>
@@ -21,7 +22,7 @@ const NavBar=()=>{
                     <Navbar.Offcanvas id='offcanvasNavbar' aria-labelledby='offcanvasNavbarLabel' placement='end' className='text-bg-dark'>
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id='offcanvasNavbarLabel'>
-                                <Navbar.Brand href='/'>
+                                <Navbar.Brand as={Link} to='/'>
                                     <img src={logo} alt='Logo' height='100' className='d-inline-block'/>
                                     Editorial Mar Negro
                                 </Navbar.Brand>

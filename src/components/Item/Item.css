@@ -1,14 +1,27 @@
+.card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:100%;
+}
+
+.card-body{
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
 .card-title{
     color:#8cff5b !important;
 }
 
 .btn{
     background-color:#dc3545 !important;
-    border-color:#dc3545 !important;
+    border:none !important;
 }
 
 .btn:hover{
     background-color:#212121 !important;
-    border-color:#dc3545 !important;
     color:#8cff5b !important;
 }

@@ -9,9 +9,9 @@ const Item=({product})=>{
     return(
         <>
             <Col md={4} className='mb-4'>
-                <Card className='h-100 text-bg-dark border-danger'>
+                <Card className='h-100 text-bg-dark'>
                     <Card.Img variant='top' src={product.image} alt={product.name} className='card-img-top'/>
-                    <Card.Body>
+                    <Card.Body className='card-body'>
                         <Card.Title className='card-title text-center'>
                             {product.name}
                         </Card.Title>

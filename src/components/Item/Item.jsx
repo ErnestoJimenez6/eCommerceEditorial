@@ -8,7 +8,7 @@ import Col from'react-bootstrap/Col'
 const Item=({product})=>{
     return(
         <>
-            <Col md={4} className='mb-4'>
+            <Col xs={12} sm={6} md={4} lg={3} className='mb-4'>
                 <Card className='h-100 text-bg-dark'>
                     <Card.Img variant='top' src={product.image} alt={product.name} className='card-img-top'/>
                     <Card.Body className='card-body'>

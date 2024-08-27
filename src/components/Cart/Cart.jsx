@@ -53,20 +53,16 @@ const Cart=()=>{
                     <tr>
                         <th>#</th>
                         <th>Nombre</th>
-                        <th>Autor</th>
-                        <th>Género</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {cart?.map(({id,name,author,category,price,qty},index)=>{
+                    {cart?.map(({id,name,price,qty},index)=>{
                         return(
                             <tr key={index}>
                                 <td>{id}</td>
                                 <td>{name}</td>
-                                <td>{author}</td>
-                                <td>{category}</td>
                                 <td>{price}</td>
                                 <td>{qty}</td>
                                 <td>
@@ -87,7 +83,7 @@ const Cart=()=>{
 
             <input type='text' name='name' id='name' placeholder='ingrese su nombre' onChange={(e)=>handleOnChange(e)}/>
             <input type='number' name='tel' id='tel' placeholder='ingrese su teléfono' onChange={(e)=>handleOnChange(e)}/>
-            <input type='email' name='email' id='email' placeholder='ingrese su email'  onChange={(e)=>handleOnChange(e)}/>
+            <input type='email' name='email' id='email' placeholder='ingrese su email' onChange={(e)=>handleOnChange(e)}/>
             <button onClick={handleSaveCart}>Finalizar Compra</button>
         </div>
     )

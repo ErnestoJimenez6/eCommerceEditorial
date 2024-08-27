@@ -34,27 +34,20 @@ const CartContextProvider=({children})=>{
     }
 
     const addToCart=(item,qty)=>{
-        setQtyItems(qtyItems+qty)
-        setTotal(total+item.price*qty)
-        let newCart=[]
-
-        if(isInCart(item.id)){
-            newCart=cart.map((elem)=>{
-                if(elem.id===item.id){
-                    return{...elem,qty:elem.qty+qty}
-                }else{
-                    return elem
-                }
-            })
-        }else{
-            newCart=[...cart,{...item,qty}]
-        }
+        const newCart=isInCart(item.id)
+        ?cart.map(elem=>
+            elem.id===item.id
+            ?{...elem,qty:elem.qty+qty}:elem
+        )
+        :[...cart,{...item,qty}]
 
         setCart(newCart)
+        setTotal(prevTotal=>prevTotal+item.price*qty)
+        setQtyItems(prevQty=>prevQty+qty)
 
         localStorage.setItem('cart',JSON.stringify(newCart))
-        localStorage.setItem('total',JSON.stringify(total))
-        localStorage.setItem('qty',JSON.stringify(qty))
+        localStorage.setItem('total',JSON.stringify(total+item.price*qty))
+        localStorage.setItem('qty',JSON.stringify(qtyItems+qty))
     }
 
     const removeItem=(id,price,qty)=>{

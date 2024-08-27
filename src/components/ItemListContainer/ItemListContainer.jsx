@@ -6,6 +6,7 @@ import{useCartContext}from'../../context/CartContext'
 import ItemList from'../ItemList/ItemList'
 import{useParams}from'react-router-dom'
 import Spinner from'../Spinner/Spinner'
+import'./ItemDetailContainer.css'
 
 const ItemListContainer=()=>{
     const[products,setProducts]=useState([])
@@ -40,7 +41,7 @@ const ItemListContainer=()=>{
 
     return(
         <main>
-            <div>{title}</div>
+            <div className='title'>{title}</div>
             {loading?<Spinner/>:<ItemList products={products}/>}
         </main>
     )

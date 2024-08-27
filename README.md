@@ -1,4 +1,4 @@
-# Proyecto de Ecommerce: Editrial Mar Negro - Libros de Ciencia Ficción, Fantasía y Horror
+# Proyecto de Ecommerce: Editorial Mar Negro - Libros de Ciencia Ficción, Fantasía y Horror
 Este proyecto es una Single Page Application (SPA) desarrollada en React para la venta de libros de ciencia ficción, fantasía y horror. Está diseñada como una tienda en línea con funcionalidades como carrito de compras, navegación dinámica y gestión de productos conectada a Firebase.
 
 ## Características

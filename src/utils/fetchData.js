@@ -1,4 +1,4 @@
-import{collection,getDocs,doc,getDoc}from'firebase/firestore'
+{/*import{collection,getDocs,doc,getDoc}from'firebase/firestore'
 import{db}from'./firebase'
 
 export const getProducts=async(category)=>{
@@ -38,9 +38,9 @@ export const getProductById=async(id)=>{
     }catch(error){
         throw new Error('No se encuentra el producto')
     }
-}
+}*/}
 
-{/*import{items}from'../mock/mockData'
+import{items}from'../mock/mockData'
 
 export const getProducts=(category)=>{
         
@@ -75,4 +75,4 @@ export const getProductById=(id)=>{
             }
         },1000)
     })
-}*/}
+}

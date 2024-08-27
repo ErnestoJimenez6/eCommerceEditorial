@@ -4,7 +4,6 @@ import ItemCount from'../ItemCount/ItemCount'
 import{useCartContext}from'../../context/CartContext'
 
 const ItemDetail=({id,name,author,description,price,stock,image})=>{
-    console.log(image)
 
     const{addToCart}=useCartContext()
 

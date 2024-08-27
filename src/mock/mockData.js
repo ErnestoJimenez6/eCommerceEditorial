@@ -14,7 +14,7 @@ export const items=[
         price:15000,
         category:['Sci-Fi'],
         stock:10,
-        image:'gs://mar-33597.appspot.com/SuenianAndroides.png'
+        image:'src/assets/SuenianAndroides.png'
     },
     {
         name:'Neuromante',
@@ -23,7 +23,7 @@ export const items=[
         price:20000,
         category:['Sci-Fi'],
         stock:15,
-        image:'gs://mar-33597.appspot.com/Neuromante.png'
+        image:'src/assets/Neuromante.png'
     },
     {
         name:'La estación de la calle Perdido',
@@ -32,7 +32,7 @@ export const items=[
         price:20000,
         category:['Fantasy'],
         stock:20,
-        image:'gs://mar-33597.appspot.com/EstacionCallePerdido.png'
+        image:'src/assets/EstacionCallePerdido.png'
     },
     {
         name:'American Gods',
@@ -41,7 +41,7 @@ export const items=[
         price:10000,
         category:['Fantasy'],
         stock:25,
-        image:'gs://mar-33597.appspot.com/AmericanGods.png'
+        image:'src/assets/AmericanGods.png'
     },
     {
         name:'Metro 2033',
@@ -50,7 +50,7 @@ export const items=[
         price:10000,
         category:['Horror'],
         stock:30,
-        image:'gs://mar-33597.appspot.com/Metro2033.png'
+        image:'src/assets/Metro2033.png'
     },
     {
         name:'El reino de la noche',
@@ -59,6 +59,6 @@ export const items=[
         price:15000,
         category:['Horror'],
         stock:35,
-        image:'gs://mar-33597.appspot.com/ReinoNoche.png'
+        image:'src/assets/ReinoNoche.png'
     }
 ]

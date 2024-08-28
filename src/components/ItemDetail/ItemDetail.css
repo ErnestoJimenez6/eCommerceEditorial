@@ -1,3 +1,26 @@
-.card{
-    max-width:30em;
+.my-container{
+    min-height:80vh;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container .img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.text-justify{
+    text-align:justify;
 }
